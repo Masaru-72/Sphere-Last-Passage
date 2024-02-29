@@ -183,7 +183,7 @@ subroutine distance(x, y, z, x0, y0, z0, d)
     d = dsqrt((x - x0)**2 + (y - y0)**2 + (z - z0)**2)
 end subroutine distance
 
-!Walk on planes with the correct distribution 
+!WOP 
 subroutine wop(x,y,z)
     implicit none
     real*8, intent(inout) :: x,y,z
@@ -263,6 +263,7 @@ subroutine bts(inf,inside_cube,x,y,z)
     end if 
 end subroutine bts 
 
+!Infinity Check
 subroutine infinity(inf, x, y, z)
     implicit none
     real*8, intent(in) :: x, y, z
